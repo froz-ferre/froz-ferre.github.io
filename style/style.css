@@ -167,7 +167,8 @@
 }
 
 #contacts h1 {
-	padding-top: 15.555%
+	padding-top: 15.555%;
+	padding-bottom: 5%;
 }
 
 .cntct_btn {
@@ -175,7 +176,7 @@
 	margin-bottom: 16.6%;
 }
 
-/*
+
 form {
-	max-width: 60%;
-} */
+	padding-top: 6%;
+} 
