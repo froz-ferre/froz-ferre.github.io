@@ -129,6 +129,7 @@
 }
 
 #contacts {
+	text-align: center;
 	color: #fff;
 	height: 900px;
 	background: url(../img/form/photo.png);
@@ -164,3 +165,17 @@
 #contacts textarea {
 	background: rgba(255, 255, 255, .1);
 }
+
+#contacts h1 {
+	padding-top: 15.555%
+}
+
+.cntct_btn {
+	margin-top: 8.1%;
+	margin-bottom: 16.6%;
+}
+
+/*
+form {
+	max-width: 60%;
+} */
