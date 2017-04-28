@@ -131,7 +131,7 @@
 #contacts {
 	text-align: center;
 	color: #fff;
-	height: 900px;
+	/*height: 900px;*/
 	background: url(../img/form/photo.png);
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -176,7 +176,40 @@
 	margin-bottom: 16.6%;
 }
 
-
 form {
 	padding-top: 6%;
 } 
+
+footer {
+	background: #282828;
+}
+
+footer p {
+	color: #fff;
+	font-size: 1.15em;
+}
+
+.foo_nav {
+	margin-top: 21.7777%;
+	margin-bottom: 12.51851%;
+	padding-left: 2%;
+}
+
+.foo_nav li {
+	display: inline-block;
+	list-style: none;
+	margin-right: 10px;
+	padding: 0;
+}
+
+.foo_nav li a {
+	padding: 0;
+	text-decoration: none;
+	color: #fff;
+}
+
+.foo_logo {
+	max-height: 225px;
+	padding: 0;
+	margin-bottom: 30%;
+}
