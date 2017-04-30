@@ -57,10 +57,13 @@
 #quote {
 	height: 420px;
 	background: #2c2c2c;
+	position: relative;
 }
 
 .qot_person {
-	padding-top: 19.6%;	
+	position: absolute;
+	bottom: 0;
+	left: 20%;
 }
 
 #cmmnt {
