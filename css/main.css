@@ -57,7 +57,7 @@ video {
 /*.header__logo-name > h1:nth-child(1) {
   animation-delay: 1s;
 }*/
-.header__logo-name > h1:nth-child(2.5) {
+.header__logo-name > h1:nth-child(1) {
   animation-delay: 2.5s;
 }
 /*.header__logo-name > h1:nth-child(3) {
