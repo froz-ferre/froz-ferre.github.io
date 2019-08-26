@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #000;
+  color: #00b01a;
+  font-family: monospace;
+}
+
+.wrapper {
+  position: relative;
+  height: 100vh;
+}
+
+#container {
+  position: absolute;
+  width: 25%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.message {
+}
+
+.message::before {
+  content: '> ';
+}
+
+.message:last-child::after {
+  content: '\00a0';
+  display: inline-block;
+  background-color: #fff;
+  animation: blink .6s infinite linear;
+}
+
+@keyframes blink {
+  100% {
+    opacity: 0;
+  }
+}
+
+#form {
+  margin-top: 25px;
+}
+
+#form input, button {
+  background-color: #000;
+  border: 1px solid gray;
+}
