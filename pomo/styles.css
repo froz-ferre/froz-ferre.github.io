@@ -1,0 +1,150 @@
+/*COMMON*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgba(20, 20, 41, 0.97);
+    color: #0eedd6;
+}
+
+/*Progress bar*/
+@keyframes growProgressBar {
+    0%, 33% { --pgPercentage: var(--fromValue); }
+    100% { --pgPercentage: var(--value); }
+}
+
+@property --pgPercentage {
+    syntax: '<number>';
+    inherits: false;
+    initial-value: 0;
+}
+
+div[role="progressbar"] {
+    --size: 400px;
+    --fg: #0eedd6;
+    --bg: white;
+    --pgPercentage: var(--value);
+    animation: growProgressBar 3s 1 forwards;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 50%;
+    background:
+            radial-gradient(closest-side, rgba(20, 20, 41, 0.97) 86%, transparent 0 92%, rgba(20, 20, 41, 0.97) 0),
+            conic-gradient(var(--fg) calc(var(--pgPercentage) * 1%), var(--bg) 0)
+;
+    color: var(--fg);
+}
+
+/*LAYOUT*/
+
+.page {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form > input,
+.form > label {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.form__label {
+    margin-bottom: 10px;
+}
+.form__title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.form__logo {
+    width: 150px;
+    height: 150px;
+    margin-top: 10px;
+}
+
+.form__button {
+    padding: 20px 15px;
+    background: transparent;
+    border: 1px solid white;
+    border-radius: 8px;
+    cursor: pointer;
+    color: white;
+    font-size: 24px;
+}
+
+.form__button:hover {
+    color: #0eedd6;
+    border-color: #0eedd6;
+}
+
+.pomo__input {
+    text-align: center;
+    background: transparent;
+    width: 150px;
+    height: 50px;
+    border: 1px solid white;
+    color: white;
+    border-radius: 8px;
+    font-size: 24px;
+}
+
+.pomo__input:focus {
+    border: 1px solid #0eedd6;
+}
+
+.pomo__input:focus-visible {
+    outline: none;
+}
+
+.pomo {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.pomo__timer {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.pomo__img {
+    --size: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: var(--size);
+    height: var(--size);
+}
+
+.pomo__rest-time {
+    color: white;
+    position: absolute;
+    top: 57%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 64px;
+    font-weight: bold;
+}
+
+#results_close {
+    margin-top: 15px;
+}
