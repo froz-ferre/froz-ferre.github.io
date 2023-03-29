@@ -74,5 +74,5 @@ async function runSecondStage() {
 }
 
 function runFinalStage() {
-  console.log(hintMSG);
+  window.location.assign('./smoke/');
 }
